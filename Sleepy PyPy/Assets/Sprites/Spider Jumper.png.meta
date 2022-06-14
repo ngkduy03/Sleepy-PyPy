@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Spider Jumper_2: 718513109494532198
+      Spider Jumper_3: -5353453562703359805
+      Spider Jumper_5: -7086379442245819230
+      Spider Jumper_1: 7221360672488611692
+      Spider Jumper_4: 2562106548812333936
+      Spider Jumper_0: 4044661903906601218
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

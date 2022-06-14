@@ -32,6 +32,8 @@ public class ForwardSpike : MonoBehaviour
         if(!right)
             return;
 
+        // Raycast method create a red line from this.transfrom.positon to Vector2.right with distance is 100
+        // Layer interact with is Player
         playerHit = Physics2D.Raycast(transform.position, Vector2.right, 100f, playerLayer);
         Debug.DrawRay(transform.position, Vector2.right * 10f, Color.red);
 
@@ -39,6 +41,8 @@ public class ForwardSpike : MonoBehaviour
         {
             playerDetected = true;
         }
+
+        //When the line interact with player, it will move forward
         if(playerDetected)
             transform.position = Vector3.MoveTowards(transform.position, targetRightPos.position,
             moveSpeed * Time.deltaTime);
