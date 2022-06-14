@@ -25,12 +25,14 @@ public class SpiderShooterPool : MonoBehaviour
     {
         if (Time.time > waitTime)
         {
-            waitTime = Time.time + Random.Range(minShootWaitTime, maxShootWaitTime);
+            // Set waitTime = the time when shoot bullet + random time from minShootWaitTime to maxShootWaitTime
             Shoot();
+            waitTime = Time.time + Random.Range(minShootWaitTime, maxShootWaitTime);
         }
     }
     void CreatBullets ()
     {
+        // Create i bullets
         for(int i = 0; i < initialBullets; i++)
         {
             GameObject newBullet = Instantiate(wBullet);
@@ -42,6 +44,7 @@ public class SpiderShooterPool : MonoBehaviour
 
     void Shoot()
     { 
+        // Set one bullet is active and fall down
         foreach (GameObject bull in BulletStorage)
         {
             if (!bull.activeInHierarchy)
