@@ -8,22 +8,25 @@ public class GameplayController : MonoBehaviour
     public static GameplayController instance;
 
     [SerializeField]
-    private GameObject player;
-    [SerializeField]
-    private GameObject respawnPoint;
-
-    [SerializeField]
-    // Slider is Unity UI 
     private Slider timeSlider, consciousSlider;
     [SerializeField]
     private float timeMax = 20f, consciousMax = 20f;
+    [SerializeField]
+    private GameObject pypy;
+
+    private PyPy pypyClass;
 
     private float timeValue, consciousValue;
 
     [SerializeField]
     private float consciousReduceValue = 1f;
-
+    private Animator anim;
     private bool gameRunning;
+
+    [SerializeField]
+    private Canvas gameOverCanvas;
+    [SerializeField]
+    private Text winText, loseTest;
 
     private void Awake()
     {
@@ -33,19 +36,19 @@ public class GameplayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Set Time Slider value
         timeValue = timeMax;
         timeSlider.maxValue = timeValue;
         timeSlider.minValue = 0f; 
         timeSlider.value = timeValue;
 
-        //Set Conscious Slider value
         consciousValue = consciousMax;
         consciousSlider.maxValue = consciousValue;
         consciousSlider.minValue = 0f;
         consciousSlider.value = consciousValue;
 
         gameRunning = true;
+
+        pypyClass = pypy.GetComponent<PyPy>();
     }
       
     // Update is called once per frame
@@ -60,45 +63,79 @@ public class GameplayController : MonoBehaviour
 
     void ReduceTime()
     {
-        // Reduce time value
         timeValue -= Time.deltaTime;
-        // Set time slider value equal time value 
         timeSlider.value = timeValue;
 
-        if(timeValue <= 0f)
+        if(timeValue < 0f)
         {
-            // if time value <= 0, time over, game over
             gameRunning = false;
-            //gameOver
+            GameOver(false);
         }
     }
     public void ReduceConscious()
     {
-        if(consciousValue > 0)
+        consciousValue -= consciousReduceValue * Time.deltaTime;
+        consciousSlider.value = consciousValue;
+
+        if (consciousValue > consciousMax / 3f)
         {
-            // Reduce Consciout Value
-            consciousValue -= consciousReduceValue * Time.deltaTime;
-            // Set Consciout Slier value equal Consciout value
-            consciousSlider.value = consciousValue;
+            if (pypyClass != null)
+            {
+                pypyClass.setMoveSlowly(false);
+                pypyClass.setStunned(false);
+            }
         }
 
-        if(consciousValue < 0f)
+        else if (consciousValue <= consciousMax / 3f)
         {
-            //stun
+            if (pypyClass != null)
+            {
+                pypyClass.setMoveSlowly(true);
+            }
+        }
+           
+        if (consciousValue <= 0f)
+        {
+            consciousValue = 0f;
+            if (pypyClass != null)
+            {
+                pypyClass.setStunned(true);
+                pypyClass.setMoveSlowly(false);
+                StartCoroutine(setAfterSleep());
+            }
         }
     }
 
     public void IncreaseConscious(float conscious)
     {
-        // Increase Conscious valued based on conscious 
         consciousValue += conscious;
 
         if(consciousValue > consciousMax)
             consciousValue = consciousMax;
     }
-
-    public void Restart()
+    IEnumerator setAfterSleep()
     {
-        player.transform.position = respawnPoint.transform.position;
+        yield return new WaitForSeconds(3f);
+        consciousValue = consciousMax /2f;
+        consciousSlider.value = consciousValue;
+        pypyClass.setStunned(false);
+        pypyClass.setMoveSlowly(true);
+    }
+
+    public void GameOver (bool win)
+    {
+        Destroy(pypy);
+        gameOverCanvas.enabled = true;
+        gameRunning = false;
+        if(win)
+        {
+            SoundController.instance.P_victory();
+            winText.gameObject.SetActive(true);
+        }
+        else
+        {
+            SoundController.instance.P_gameOver();
+            loseTest.gameObject.SetActive(true);
+        }
     }
 }

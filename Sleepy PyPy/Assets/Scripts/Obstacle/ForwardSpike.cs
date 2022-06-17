@@ -14,11 +14,13 @@ public class ForwardSpike : MonoBehaviour
     private LayerMask playerLayer;
     [SerializeField]
     private bool right;
+    [SerializeField]
+    private float distance;
 
     private RaycastHit2D playerHit;
     private bool playerDetected;
 
-   
+
 
     // Update is called once per frame
     void Update()
@@ -29,39 +31,39 @@ public class ForwardSpike : MonoBehaviour
 
     private void DetectPlayerFormRightSide()
     {
-        if(!right)
+        if (!right)
             return;
 
-        // Raycast method create a red line from this.transfrom.positon to Vector2.right with distance is 100
-        // Layer interact with is Player
-        playerHit = Physics2D.Raycast(transform.position, Vector2.right, 100f, playerLayer);
-        Debug.DrawRay(transform.position, Vector2.right * 10f, Color.red);
+        MoveSpikeTo(targetRightPos, Vector2.right);
+    }
 
-        if (playerHit)
+    private void MoveSpikeTo(Transform target, Vector2 direction)
+    {
+        if (playerDetected)
         {
-            playerDetected = true;
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                target.position,
+                moveSpeed * Time.deltaTime
+            );
         }
+        else
+        {
+            playerHit = Physics2D.Raycast(transform.position, direction, distance, playerLayer);
+            Debug.DrawRay(transform.position, direction * distance, Color.red);
 
-        //When the line interact with player, it will move forward
-        if(playerDetected)
-            transform.position = Vector3.MoveTowards(transform.position, targetRightPos.position,
-            moveSpeed * Time.deltaTime);
+            if (playerHit)
+            {
+                playerDetected = true;
+            }
+        }
     }
 
     private void DetectPlayerFormLeftSide()
     {
         if (right)
             return;
-        
-        playerHit = Physics2D.Raycast(transform.position, Vector2.left, 100f, playerLayer);
-        Debug.DrawRay(transform.position, Vector2.left * 10f, Color.red);
 
-        if (playerHit)
-        {
-            playerDetected = true;
-        }
-        if (playerDetected)
-            transform.position = Vector3.MoveTowards(transform.position, targetLeftPos.position,
-            moveSpeed * Time.deltaTime);
+        MoveSpikeTo(targetLeftPos, Vector2.left);
     }
 }

@@ -22,29 +22,22 @@ public class Door : MonoBehaviour
 
     void OpenDoor()
     {
-        // Play animation open door
+        SoundController.instance.P_door();
         anim.Play("open");
+        boxCol.enabled = false;
     }
 
     public void RegisterDiamond()
     {
-        // Amount of diamond this level has
         diamondCount++;
     }
 
     public void DiamondCollected()
     {
-        // Reduce diamond in this level
         diamondCount--;
         if(diamondCount==0)
         {
             OpenDoor();
         }
-    }
-
-    void RemoveColider()
-    {
-        // Open the door 
-        boxCol.enabled = false;
     }
 }

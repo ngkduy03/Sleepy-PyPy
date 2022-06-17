@@ -24,13 +24,11 @@ public class CameraFollowing : MonoBehaviour
 
     void FollowPlayer()
     {
-        // Target is Player
         if(!target)
             return;
         tempPos = transform.position;
         tempPos.x = target.position.x - offsetX;
 
-        // tempPos is position we use compute
         if(tempPos.x < minX)
             tempPos.x = minX;
         if(tempPos.x > maxX)

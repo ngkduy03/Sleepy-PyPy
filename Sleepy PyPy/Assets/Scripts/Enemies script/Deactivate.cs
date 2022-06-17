@@ -5,7 +5,7 @@ using UnityEngine;
 public class Deactivate : MonoBehaviour
 {
     [SerializeField]
-    private float deactivateTimer = 2f;
+    private float deactivateTimer = 3f;
     private void OnEnable()
     {
         Invoke(nameof(DeactivateGameObj), deactivateTimer);
@@ -14,13 +14,12 @@ public class Deactivate : MonoBehaviour
     private void OnDisable()
     {
         CancelInvoke(nameof(DeactivateGameObj));
-    }
+    }  
     private void DeactivateGameObj ()
     {
-        //Destroy(gameObject);
-        //CancelInvoke(nameof(DeactivateGameObj));
-        // Set this bullet is Deactive
-        gameObject.SetActive(false);
-        
+        {
+            CancelInvoke(nameof(DeactivateGameObj));
+            gameObject.SetActive(false);
+        }
     }
 }

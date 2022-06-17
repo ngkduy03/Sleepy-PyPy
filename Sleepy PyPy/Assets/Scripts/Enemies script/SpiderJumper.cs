@@ -34,8 +34,8 @@ public class SpiderJumper : MonoBehaviour
     {
         if(jumpAllowed)
         {
+            
             jumpAllowed = false;
-            // When jump is allow, make velocity of spider = new velocity
             myBody.velocity = new Vector2 (0f,Random.Range(minJumpForce,maxJumpForce));
         }
     }
@@ -44,19 +44,16 @@ public class SpiderJumper : MonoBehaviour
     {
         if (Time.time > jumpTimer)
         {
-            // Set jumpTimer = time when jump + random time in range minWaitTime and maxWaitTime
-            Jump(); 
+            Jump();
+            
             jumpTimer = Time.time + Random.Range(minWaitTime, maxWaitTime);
         }
-
-        // if velocity is 0, mean the spider is on ground, spider can jump again
         if(myBody.velocity.magnitude==0)
             jumpAllowed = true;
     }
 
     void JumpAnimation()
     {
-        // Play animation 
         if (myBody.velocity.magnitude == 0)
             anim.SetBool(jumpAnimation, false);
         else

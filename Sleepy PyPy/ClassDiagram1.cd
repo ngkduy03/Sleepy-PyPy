@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Diamonds" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Collectable\Diamonds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VRohto" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Collectable\VRohto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Deactivate" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies script\Deactivate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpiderJumper" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJSAEAAAIiACAGAAAAAAAAAAAAAAAAAAAQAEAAAAAEE=</HashCode>
+      <FileName>Assets\Scripts\Enemies script\SpiderJumper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpiderShooter" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAABAAAAABQAAAAABAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies script\SpiderShooter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpiderShooterPool" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAABAAAAABQAAAAABAEgAACAgAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Enemies script\SpiderShooterPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpiderWalker" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAFCAAAAJAAAAAACAiAQAAYAAAAACgCAiAAEA=</HashCode>
+      <FileName>Assets\Scripts\Enemies script\SpiderWalker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraFollowing" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAADAJAAAIAAAAAAAAAAAAAAAABAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\CameraFollowing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Door" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgIAAAAAAAABAAAAABAAAAAAQAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameplayController" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAiAIDACAAgAIAAgAAAAAAQCBAABAAAQBCQAAFAEA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\GameplayController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PyPy" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAEgADQAQAAIAAAgAAAUAAAEAQAQAgCAAAIEA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\PyPy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundController" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAgAgAAAAAEIAAgRABAAAAAAAAIAAAAAMA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\SoundController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FallingObject" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAAKAAAACAAAAAAAAGAAAAAAAQCAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Obstacle\FallingObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ForwardSpike" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEACAAEAAAAACACAAAAAAAAEAAAAAAAQAAAEIAhAA=</HashCode>
+      <FileName>Assets\Scripts\Obstacle\ForwardSpike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HaggingSpike" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAIAAAACAAAACAAAAAAAAGAAAAAAAQAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Obstacle\HaggingSpike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="saw" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQVAAAAAEAAAAIAAhAAAAAAAAAAAAAAAABBQAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Obstacle\saw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI_Controller" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAEAAAAAQAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\UI\UI_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
