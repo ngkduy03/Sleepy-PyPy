@@ -13,7 +13,7 @@ TextureImporter:
     second: Spider Shooter_2
   - first:
       213: -1421852576988326768
-    second: Web Shooter
+    second: Web
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Web Shooter
+      name: Web
       rect:
         serializedVersion: 2
         x: 826

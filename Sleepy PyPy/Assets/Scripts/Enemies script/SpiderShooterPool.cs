@@ -12,7 +12,7 @@ public class SpiderShooterPool : MonoBehaviour
     private int initialBullets = 4; 
     private float minShootWaitTime = 1f, maxShootWaitTime = 3f;
     private float waitTime;
-
+    
     private void Awake()
     {
         CreatBullets();

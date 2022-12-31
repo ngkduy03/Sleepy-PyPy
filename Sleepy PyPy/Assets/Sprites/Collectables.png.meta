@@ -4,19 +4,19 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3738684955690558537
-    second: Collectables_0
+    second: BIce
   - first:
       213: 1261733811358607136
-    second: Collectables_1
+    second: OIce
   - first:
       213: -7824734652087929343
-    second: Collectables_2
+    second: PIce
   - first:
       213: -8766860720156965329
-    second: Collectables_3
+    second: Time
   - first:
       213: 3350666890990760709
-    second: Collectables_4
+    second: Concious
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Collectables_0
+      name: BIce
       rect:
         serializedVersion: 2
         x: 15
@@ -126,7 +126,7 @@ TextureImporter:
         width: 170
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,15 +139,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collectables_1
+      name: OIce
       rect:
         serializedVersion: 2
-        x: 199
+        x: 202
         y: 15
         width: 170
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collectables_2
+      name: PIce
       rect:
         serializedVersion: 2
         x: 383
@@ -168,7 +168,7 @@ TextureImporter:
         width: 170
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collectables_3
+      name: Time
       rect:
         serializedVersion: 2
         x: 566
@@ -189,7 +189,7 @@ TextureImporter:
         width: 168
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,15 +202,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Collectables_4
+      name: Concious
       rect:
         serializedVersion: 2
-        x: 747
+        x: 746
         y: 17
         width: 175
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

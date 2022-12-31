@@ -34,7 +34,6 @@ public class PyPy : MonoBehaviour
     private void FixedUpdate()
     {
         Moving();
-
     }
 
     void Moving()

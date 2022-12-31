@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4908484465254277661
-    second: Character 1_0
+    second: Awake
   - first:
       213: 2634803378037534032
-    second: Character 1_1
+    second: stage 2
   - first:
       213: 9004509398020038451
-    second: Character 1_2
+    second: stage 4
   - first:
       213: 7375804620724820977
-    second: Character 1_3
+    second: Sleep
   - first:
       213: -1042857608484187032
     second: Character 1_4
@@ -22,10 +22,10 @@ TextureImporter:
     second: Character 1_5
   - first:
       213: -6700650242012212851
-    second: Character 1_6
+    second: stage 3
   - first:
       213: -2437063977463517733
-    second: Character 1_7
+    second: stage 1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,15 +127,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character 1_0
+      name: Awake
       rect:
         serializedVersion: 2
-        x: 25
-        y: 43
+        x: 30
+        y: 45
         width: 150
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,15 +148,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character 1_1
+      name: stage 2
       rect:
         serializedVersion: 2
-        x: 225
+        x: 229
         y: 43
         width: 150
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,7 +169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character 1_2
+      name: stage 4
       rect:
         serializedVersion: 2
         x: 425
@@ -177,7 +177,7 @@ TextureImporter:
         width: 150
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character 1_3
+      name: Sleep
       rect:
         serializedVersion: 2
         x: 625
@@ -198,7 +198,7 @@ TextureImporter:
         width: 150
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,49 +211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character 1_4
-      rect:
-        serializedVersion: 2
-        x: 825
-        y: 47
-        width: 150
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8649cf6c7860781f0800000000000000
-      internalID: -1042857608484187032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character 1_5
-      rect:
-        serializedVersion: 2
-        x: 1025
-        y: 42
-        width: 150
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32d07a9cff36af6f0800000000000000
-      internalID: -650097245950636765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Character 1_6
+      name: stage 3
       rect:
         serializedVersion: 2
         x: 1225
@@ -261,7 +219,7 @@ TextureImporter:
         width: 150
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,7 +232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character 1_7
+      name: stage 1
       rect:
         serializedVersion: 2
         x: 1425
@@ -282,7 +240,7 @@ TextureImporter:
         width: 150
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

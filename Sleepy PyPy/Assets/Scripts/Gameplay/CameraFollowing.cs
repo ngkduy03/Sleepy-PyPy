@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollowing : MonoBehaviour
 {
+    
     private Transform target;
     [SerializeField]
     private float offsetX = -5f;
